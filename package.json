@@ -1,0 +1,16 @@
+{
+  "name": "ai-news-operations",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fetch:today": "node automations/scripts/fetch_sources.mjs",
+    "validate:data": "node automations/scripts/validate_data.mjs",
+    "audit": "node automations/scripts/audit_workspace.mjs",
+    "record:post": "node automations/scripts/record_post.mjs",
+    "review:weekly": "node automations/scripts/weekly_review_stub.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

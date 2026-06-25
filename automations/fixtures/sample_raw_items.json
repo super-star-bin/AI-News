@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Sample AI tool update",
+    "url": "https://openai.com/news/sample",
+    "source": "OpenAI News",
+    "sourceLevel": "S",
+    "column": "工具实测",
+    "mainline": "工具",
+    "publishedAt": "2026-06-25T00:00:00.000Z",
+    "summary": "Fixture item for local tests.",
+    "userValue": "用于测试工具实测候选入库。",
+    "risk": "这是 fixture，不可发布。"
+  }
+]
