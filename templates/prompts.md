@@ -16,9 +16,10 @@
 3. 优先级：官方博客 / GitHub / arXiv / Hugging Face / HN / Reddit / 高质量媒体 / 核心人物公开发言。
 4. 过滤二手搬运、无来源截图、标题党、重复报道。
 5. 每条链接给出：标题、URL、来源、发布时间、来源等级、推荐栏目、用户价值、风险提示。
-6. 将原始候选写入 `inbox/raw_links_YYYY-MM-DD.md`。
-7. 生成 Top 10 选题简报，写入 `briefs/daily_brief_YYYY-MM-DD.md`。
-8. 将候选选题追加到 `data/topics.csv`。
+6. 如果标题、摘要或引用内容包含英文，必须在英文后补充中文说明，解释它讲什么、为什么值得关注、对目标用户有什么意义。
+7. 将原始候选写入 `inbox/raw_links_YYYY-MM-DD.md`。
+8. 生成 Top 10 选题简报，写入 `briefs/daily_brief_YYYY-MM-DD.md`。
+9. 将候选选题追加到 `data/topics.csv`。
 
 要求：
 - 不要编造来源。
@@ -35,9 +36,10 @@
 要求：
 1. 输出 Top 10 候选选题。
 2. 每个选题标注来源等级、适合栏目、主线、用户价值、核验风险。
-3. 推荐今天最值得发布的 1 个选题。
-4. 写入 `briefs/daily_brief_YYYY-MM-DD.md`。
-5. 将候选选题追加到 `data/topics.csv`。
+3. 如果选题标题、摘要或引用内容包含英文，必须在英文后补充中文说明。
+4. 推荐今天最值得发布的 1 个选题。
+5. 写入 `briefs/daily_brief_YYYY-MM-DD.md`。
+6. 将候选选题追加到 `data/topics.csv`。
 ```
 
 ## 事实核验
@@ -124,4 +126,3 @@
 6. 需要补充实测或案例的空白。
 7. 写入 `reviews/monthly_review_YYYY-MM.md`。
 ```
-

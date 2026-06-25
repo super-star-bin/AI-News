@@ -17,3 +17,17 @@
 - `npm run audit`：PASS。
 - `node automations/scripts/fetch_sources.mjs --dry-run`：PASS。
 - `node automations/scripts/record_post.mjs --dry-run`：PASS。
+
+## 2026-06-25 优化记录
+
+- 在 `AGENTS.md` 中补充沙箱拦截处理规则：低风险项目内动作被沙箱拦截时，直接使用提升权限机制重试，不再先单独聊天询问。
+- 在 `AGENTS.md`、`templates/prompts.md` 和 `README.md` 中补充英文资讯中文说明要求。
+- 在 `automations/scripts/common.mjs` 和 `fetch_sources.mjs` 中为英文标题/摘要候选生成 `中文说明`，并写入 `inbox/raw_links_YYYY-MM-DD.md` 和 `briefs/daily_brief_YYYY-MM-DD.md`。
+- 在 `README.md` 中补充当前目录每个文件夹的中文名称和作用。
+- 重新运行 `npm run fetch:today`，今日候选和简报已包含中文说明。
+
+## 2026-06-25 优化验证
+
+- `npm run validate:data`：PASS。
+- `npm run audit`：PASS。
+- `node automations/scripts/fetch_sources.mjs --dry-run`：PASS。

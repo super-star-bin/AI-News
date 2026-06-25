@@ -12,11 +12,11 @@ function rawLinksMarkdown(items, date) {
   const lines = [
     `# ${date} AI 候选链接`,
     "",
-    "| 标题 | URL | 来源 | 来源等级 | 栏目 | 用户价值 | 风险提示 |",
-    "| --- | --- | --- | --- | --- | --- | --- |"
+    "| 标题 | 中文说明 | URL | 来源 | 来源等级 | 栏目 | 用户价值 | 风险提示 |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- |"
   ];
   for (const item of items) {
-    lines.push(`| ${item.title} | ${item.url} | ${item.source} | ${item.sourceLevel} | ${item.column} | ${item.userValue} | ${item.risk} |`);
+    lines.push(`| ${item.title} | ${item.chineseExplanation || ""} | ${item.url} | ${item.source} | ${item.sourceLevel} | ${item.column} | ${item.userValue} | ${item.risk} |`);
   }
   return `${lines.join("\n")}\n`;
 }
@@ -31,6 +31,7 @@ function dailyBriefMarkdown(items, date) {
   ];
   top.forEach((item, index) => {
     lines.push(`### ${index + 1}. ${item.title}`);
+    if (item.chineseExplanation) lines.push(`- 中文说明：${item.chineseExplanation.replace(/^中文说明：/, "")}`);
     lines.push(`- 链接：${item.url}`);
     lines.push(`- 来源：${item.source}（${item.sourceLevel}）`);
     lines.push(`- 栏目：${item.column}`);
@@ -43,6 +44,7 @@ function dailyBriefMarkdown(items, date) {
     lines.push("## 今日最推荐");
     lines.push("");
     lines.push(`优先考虑：${top[0].title}`);
+    if (top[0].chineseExplanation) lines.push(`中文说明：${top[0].chineseExplanation.replace(/^中文说明：/, "")}`);
     lines.push(`原因：${top[0].userValue}`);
   }
   return `${lines.join("\n")}\n`;

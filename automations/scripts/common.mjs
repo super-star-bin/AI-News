@@ -108,7 +108,7 @@ export function nextId(prefix, date, existingRows) {
 }
 
 export function standardItem(item) {
-  return {
+  const normalized = {
     title: item.title || "",
     url: item.url || "",
     source: item.source || "",
@@ -123,6 +123,35 @@ export function standardItem(item) {
     viralityScore: item.viralityScore || 3,
     utilityScore: item.utilityScore || 3
   };
+  return {
+    ...normalized,
+    chineseExplanation: item.chineseExplanation || buildChineseExplanation(normalized)
+  };
+}
+
+export function hasEnglish(text) {
+  return /[A-Za-z]{3,}/.test(String(text || ""));
+}
+
+export function buildChineseExplanation(item) {
+  const title = item.title || "";
+  const summary = item.summary || "";
+  if (!hasEnglish(`${title} ${summary}`)) return "";
+  const source = item.source || "公开信源";
+  const column = item.column || "今日值得看";
+  if (source === "arXiv") {
+    return `中文说明：这是一篇英文论文候选，主题与“${title}”相关。发布前需要把论文问题、核心发现、适用场景和限制条件转写成中文，适合放入“${column}”。`;
+  }
+  if (source === "GitHub") {
+    return `中文说明：这是一个英文开源项目候选，项目名为“${title}”。发布前需要用中文解释它解决什么问题、适合谁、上手难度和风险，适合放入“${column}”。`;
+  }
+  if (source === "Hugging Face") {
+    return `中文说明：这是 Hugging Face 上的英文论文/模型线索，标题或编号为“${title}”。发布前需要补充中文解释、原始论文链接和可应用场景，适合放入“${column}”。`;
+  }
+  if (source === "Hacker News") {
+    return `中文说明：这是英文技术社区讨论线索，主题为“${title}”。它只能用于发现关注点和争议，发布前必须回到一手来源核验，适合放入“${column}”。`;
+  }
+  return `中文说明：这条英文资讯来自 ${source}，主题为“${title}”。发布前需要用中文解释它讲什么、为什么值得关注、对目标用户有什么用，适合放入“${column}”。`;
 }
 
 export function extractUrlsFromMarkdownTable(markdown) {
