@@ -8,6 +8,7 @@
     "validate:data": "node automations/scripts/validate_data.mjs",
     "audit": "node automations/scripts/audit_workspace.mjs",
     "record:post": "node automations/scripts/record_post.mjs",
+    "translate:topics": "node automations/scripts/translate_topics.mjs",
     "review:weekly": "node automations/scripts/weekly_review_stub.mjs"
   },
   "engines": {

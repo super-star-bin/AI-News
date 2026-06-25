@@ -9,7 +9,7 @@ export function appendTopics(items, options = {}) {
     fs.writeFileSync(filePath, `${TOPICS_HEADER}\n`, "utf8");
   }
   const csv = readCsv(filePath);
-  const existingUrls = new Set(csv.rows.map((row) => normalizeUrl(row[2])));
+  const existingUrls = new Set(csv.rows.map((row) => normalizeUrl(row[3])));
   const rowsToAppend = [];
   let existingRows = [...csv.rows];
 
@@ -21,6 +21,7 @@ export function appendTopics(items, options = {}) {
     const row = [
       topicId,
       item.title,
+      item.titleZh,
       item.url,
       item.source,
       item.sourceLevel,
@@ -29,6 +30,7 @@ export function appendTopics(items, options = {}) {
       item.publishedAt,
       date,
       item.summary,
+      item.summaryZh,
       item.userValue,
       item.reliabilityScore,
       item.viralityScore,

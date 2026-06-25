@@ -31,3 +31,19 @@
 - `npm run validate:data`：PASS。
 - `npm run audit`：PASS。
 - `node automations/scripts/fetch_sources.mjs --dry-run`：PASS。
+
+## 2026-06-25 topics 翻译字段优化
+
+- `data/topics.csv` 新增 `选题标题中文翻译` 和 `AI摘要中文翻译` 两列。
+- 英文 `选题标题` 必须补中文翻译；中文或纯数字标题可留空。
+- 英文 `AI摘要` 必须补中文翻译；中文摘要可留空。
+- 新增 `npm run translate:topics`，用于迁移旧表头并补齐翻译列。
+- 更新数据校验：英文标题/摘要缺少中文翻译时会失败。
+- 已迁移现有 21 条记录。
+
+## 2026-06-25 topics 翻译字段验证
+
+- `npm run translate:topics`：PASS，处理 21 行。
+- `npm run validate:data`：PASS。
+- `npm run audit`：PASS。
+- `node automations/scripts/fetch_sources.mjs --dry-run`：PASS。

@@ -11,6 +11,7 @@
 
 ```bash
 npm run fetch:today
+npm run translate:topics
 npm run validate:data
 npm run audit
 npm run record:post -- --topic-id T20260625-004 --title "标题" --url "https://www.xiaohongshu.com/..."
@@ -30,6 +31,14 @@ node automations/scripts/fetch_sources.mjs
 - `inbox/raw_links_YYYY-MM-DD.md`
 - `briefs/daily_brief_YYYY-MM-DD.md`
 - `data/topics.csv`
+
+抓取后如果 `data/topics.csv` 中的 `选题标题` 或 `AI摘要` 是英文，运行：
+
+```bash
+npm run translate:topics
+```
+
+该命令会补齐 `选题标题中文翻译` 和 `AI摘要中文翻译`。如果原文已经是中文，对应翻译列可以留空。
 
 ## 网络权限边界
 

@@ -66,6 +66,7 @@ git diff
 
 ```bash
 npm run fetch:today
+npm run translate:topics
 npm run validate:data
 npm run audit
 ```
@@ -79,3 +80,14 @@ npm run audit
 1. 这条英文内容大概讲什么。
 2. 为什么值得关注。
 3. 对小红书目标用户有什么意义。
+
+`data/topics.csv` 有两个专门字段：
+
+- `选题标题中文翻译`
+- `AI摘要中文翻译`
+
+如果 `选题标题` 或 `AI摘要` 是英文，必须补充对应中文翻译；如果原文已经是中文，则对应翻译字段可以留空。抓取新选题后可运行：
+
+```bash
+npm run translate:topics
+```

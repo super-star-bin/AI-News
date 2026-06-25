@@ -2,7 +2,7 @@ import fs from "node:fs";
 import { isCli, NEEDS_HEADER, POSTS_HEADER, TOPICS_HEADER, readCsv } from "./common.mjs";
 
 const checks = [
-  ["data/topics.csv", TOPICS_HEADER, [0, 1, 2]],
+  ["data/topics.csv", TOPICS_HEADER, [0, 1, 3]],
   ["data/posts.csv", POSTS_HEADER, [0, 1]],
   ["data/user_needs.csv", NEEDS_HEADER, [0, 3]]
 ];
@@ -37,14 +37,20 @@ export function validateData() {
         if (ids.has(row[0])) errors.push(`${filePath}: duplicate id ${row[0]}`);
         ids.add(row[0]);
       }
-      if (filePath.endsWith("topics.csv") && row[2] && !looksLikeUrl(row[2])) {
-        errors.push(`${filePath}: row ${index + 2} invalid URL ${row[2]}`);
+      if (filePath.endsWith("topics.csv") && row[3] && !looksLikeUrl(row[3])) {
+        errors.push(`${filePath}: row ${index + 2} invalid URL ${row[3]}`);
       }
       if (filePath.endsWith("posts.csv") && row[5] && !looksLikeUrl(row[5])) {
         errors.push(`${filePath}: row ${index + 2} invalid URL ${row[5]}`);
       }
-      if (filePath.endsWith("topics.csv") && row[17] && !fs.existsSync(row[17])) {
-        errors.push(`${filePath}: row ${index + 2} missing draft path ${row[17]}`);
+      if (filePath.endsWith("topics.csv") && row[1] && /[A-Za-z]{3,}/.test(row[1]) && !row[2]) {
+        errors.push(`${filePath}: row ${index + 2} missing title Chinese translation`);
+      }
+      if (filePath.endsWith("topics.csv") && row[10] && /[A-Za-z]{3,}/.test(row[10]) && !row[11]) {
+        errors.push(`${filePath}: row ${index + 2} missing summary Chinese translation`);
+      }
+      if (filePath.endsWith("topics.csv") && row[19] && !fs.existsSync(row[19])) {
+        errors.push(`${filePath}: row ${index + 2} missing draft path ${row[19]}`);
       }
     });
   }

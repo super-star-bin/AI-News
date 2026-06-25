@@ -11,7 +11,7 @@ const id = weekId(new Date());
 const posts = readCsv("data/posts.csv").rows;
 const topics = readCsv("data/topics.csv").rows;
 const needs = readCsv("data/user_needs.csv").rows;
-const candidateTopics = topics.slice(0, 10).map((row, index) => `${index + 1}. ${row[1] || "待补充选题"}`).join("\n");
+const candidateTopics = topics.slice(0, 10).map((row, index) => `${index + 1}. ${row[2] || row[1] || "待补充选题"}`).join("\n");
 const content = `# ${id} 小红书 AI 账号周复盘
 
 ## 本周发布

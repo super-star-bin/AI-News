@@ -14,8 +14,8 @@ function rewriteTopicStatus(topicId, draftPath) {
     if (index === 0) return line;
     const cells = parseCsvLine(line);
     if (cells[0] !== topicId) return line;
-    cells[16] = "已发布";
-    if (draftPath && !cells[17]) cells[17] = draftPath;
+    cells[18] = "已发布";
+    if (draftPath && !cells[19]) cells[19] = draftPath;
     return csvLine(cells);
   });
   fs.writeFileSync(filePath, `${updated.join("\n")}\n`, "utf8");

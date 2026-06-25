@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-export const TOPICS_HEADER = "topic_id,选题标题,原始链接,来源,来源等级,栏目,主线,发布时间,发现日期,AI摘要,用户价值,可靠性评分,传播性评分,实用性评分,事实核验,实测状态,发布状态,草稿路径,复盘结论";
+export const TOPICS_HEADER = "topic_id,选题标题,选题标题中文翻译,原始链接,来源,来源等级,栏目,主线,发布时间,发现日期,AI摘要,AI摘要中文翻译,用户价值,可靠性评分,传播性评分,实用性评分,事实核验,实测状态,发布状态,草稿路径,复盘结论";
 export const POSTS_HEADER = "post_id,topic_id,发布日期,栏目,小红书标题,小红书链接,浏览,点赞,收藏,评论,关注转化,私信需求,D1复盘,D7复盘";
 export const NEEDS_HEADER = "need_id,日期,来源,用户原话,需求类型,关联post_id,关联topic_id,可做产品,优先级,处理状态,备注";
 
@@ -66,7 +66,10 @@ export function readCsv(filePath) {
   const text = readText(filePath).trim();
   if (!text) return { header: "", rows: [] };
   const lines = text.split(/\r?\n/);
-  return { header: lines[0], rows: lines.slice(1).filter(Boolean).map(parseCsvLine) };
+  return {
+    header: parseCsvLine(lines[0]).map((cell) => cell.trim()).join(","),
+    rows: lines.slice(1).filter(Boolean).map((line) => parseCsvLine(line).map((cell) => cell.trim()))
+  };
 }
 
 export function normalizeUrl(url) {
@@ -125,7 +128,9 @@ export function standardItem(item) {
   };
   return {
     ...normalized,
-    chineseExplanation: item.chineseExplanation || buildChineseExplanation(normalized)
+    chineseExplanation: item.chineseExplanation || buildChineseExplanation(normalized),
+    titleZh: item.titleZh || buildChineseTitleTranslation(normalized.title, normalized),
+    summaryZh: item.summaryZh || buildChineseSummaryTranslation(normalized.summary, normalized)
   };
 }
 
@@ -152,6 +157,28 @@ export function buildChineseExplanation(item) {
     return `中文说明：这是英文技术社区讨论线索，主题为“${title}”。它只能用于发现关注点和争议，发布前必须回到一手来源核验，适合放入“${column}”。`;
   }
   return `中文说明：这条英文资讯来自 ${source}，主题为“${title}”。发布前需要用中文解释它讲什么、为什么值得关注、对目标用户有什么用，适合放入“${column}”。`;
+}
+
+export function buildChineseTitleTranslation(title, item = {}) {
+  if (!hasEnglish(title)) return "";
+  const source = item.source || "公开信源";
+  if (source === "arXiv") return `中文译名待精校：${title}`;
+  if (source === "GitHub") return `中文译名待精校：${title}（开源项目）`;
+  if (source === "Hugging Face") return `中文译名待精校：${title}（Hugging Face 论文/模型线索）`;
+  return `中文译名待精校：${title}`;
+}
+
+export function buildChineseSummaryTranslation(summary, item = {}) {
+  if (!hasEnglish(summary)) return "";
+  const source = item.source || "公开信源";
+  const column = item.column || "今日值得看";
+  if (source === "arXiv") {
+    return `中文摘要待精校：这是一条英文论文摘要，发布前需要翻译为中文并提炼研究问题、方法、结论、适用场景和限制，适合进入“${column}”。`;
+  }
+  if (source === "GitHub") {
+    return `中文摘要待精校：这是一个英文开源项目说明，发布前需要翻译为中文并说明项目用途、适合人群、上手难度和风险。`;
+  }
+  return `中文摘要待精校：这条英文信息来自 ${source}，发布前需要翻译为中文并说明它讲什么、为什么值得关注、对目标用户有什么意义。`;
 }
 
 export function extractUrlsFromMarkdownTable(markdown) {
