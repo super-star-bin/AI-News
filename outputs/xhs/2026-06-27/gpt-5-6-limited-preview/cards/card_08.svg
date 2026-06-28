@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440">
+  <rect width="1080" height="1440" fill="#F6F2E8"/>
+  
+  
+  
+  <g transform="translate(84 70)">
+    
+  <g transform="translate(0 0)">
+    <rect x="0" y="0" width="64" height="64" rx="13" fill="#163B3A"/>
+    <ellipse cx="32" cy="32" rx="21.76" ry="11.52" fill="none" stroke="#FFFDF7" stroke-width="2.88" transform="rotate(-24 32 32)"/>
+    <ellipse cx="32" cy="32" rx="21.76" ry="11.52" fill="none" stroke="#FFFDF7" stroke-width="2.88" transform="rotate(24 32 32)"/>
+    <circle cx="48" cy="17.92" r="4.8" fill="#F2C94C"/>
+    <text x="32" y="39.68" font-family="'PingFang SC','Hiragino Sans GB','STHeiti','Helvetica Neue',Arial,sans-serif" font-size="21.76" font-weight="800" fill="#FFFDF7" text-anchor="middle">AI</text>
+  </g>
+    <text x="78" y="29" font-family="'PingFang SC','Hiragino Sans GB','STHeiti','Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="800" fill="#111827">AI宇宙</text>
+    <text x="79" y="55" font-family="'PingFang SC','Hiragino Sans GB','STHeiti','Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="700" fill="#009B95" letter-spacing="1.5">AI NEWS</text>
+  </g>
+  <rect x="760" y="84" width="236" height="46" rx="23" fill="#FFFDF7"/>
+<text x="878" y="115" font-family="'PingFang SC','Hiragino Sans GB','STHeiti','Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="700" fill="#163B3A" text-anchor="middle">07 一句话总结</text>
+  <line x1="84" y1="166" x2="996" y2="166" stroke="#D7D0C2" stroke-width="2"/>
+  <text x="84" y="302" font-family="'PingFang SC','Hiragino Sans GB','STHeiti','Helvetica Neue',Arial,sans-serif" font-size="58" font-weight="900" fill="#111827" text-anchor="start">追新模型，不如先学会读发布说明</text>
+  
+    <rect x="84" y="446" width="58" height="58" rx="18" fill="#D84A3A"/>
+    <text x="113" y="486" font-family="'PingFang SC','Hiragino Sans GB','STHeiti','Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="900" fill="#FFFDF7" text-anchor="middle">1</text>
+    <text x="166" y="494" font-family="'PingFang SC','Hiragino Sans GB','STHeiti','Helvetica Neue',Arial,sans-serif" font-size="37" font-weight="780" fill="#111827" text-anchor="start">看清开放范围</text>
+
+    <rect x="84" y="542" width="58" height="58" rx="18" fill="#009B95"/>
+    <text x="113" y="582" font-family="'PingFang SC','Hiragino Sans GB','STHeiti','Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="900" fill="#FFFDF7" text-anchor="middle">2</text>
+    <text x="166" y="590" font-family="'PingFang SC','Hiragino Sans GB','STHeiti','Helvetica Neue',Arial,sans-serif" font-size="37" font-weight="780" fill="#111827" text-anchor="start">看清使用入口</text>
+
+    <rect x="84" y="638" width="58" height="58" rx="18" fill="#009B95"/>
+    <text x="113" y="678" font-family="'PingFang SC','Hiragino Sans GB','STHeiti','Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="900" fill="#FFFDF7" text-anchor="middle">3</text>
+    <text x="166" y="686" font-family="'PingFang SC','Hiragino Sans GB','STHeiti','Helvetica Neue',Arial,sans-serif" font-size="37" font-weight="780" fill="#111827" text-anchor="start">看清真实成本</text>
+
+    <rect x="84" y="734" width="58" height="58" rx="18" fill="#009B95"/>
+    <text x="113" y="774" font-family="'PingFang SC','Hiragino Sans GB','STHeiti','Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="900" fill="#FFFDF7" text-anchor="middle">4</text>
+    <text x="166" y="782" font-family="'PingFang SC','Hiragino Sans GB','STHeiti','Helvetica Neue',Arial,sans-serif" font-size="37" font-weight="780" fill="#111827" text-anchor="start">看清风险边界</text>
+  <rect x="84" y="954" width="912" height="222" rx="28" fill="#163B3A"/>
+  <circle cx="156" cy="1065" r="35" fill="#F2C94C"/>
+  <text x="156" y="1078" font-family="'PingFang SC','Hiragino Sans GB','STHeiti','Helvetica Neue',Arial,sans-serif" font-size="38" font-weight="900" fill="#163B3A" text-anchor="middle">收</text>
+  <text x="214" y="1053.44" font-family="'PingFang SC','Hiragino Sans GB','STHeiti','Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="850" fill="#FFFDF7" text-anchor="start">值得收藏：强不强之外，还要看能不能进你的</text>
+<text x="214" y="1098.3200000000002" font-family="'PingFang SC','Hiragino Sans GB','STHeiti','Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="850" fill="#FFFDF7" text-anchor="start">工作流</text>
+  
+  <line x1="84" y1="1324" x2="996" y2="1324" stroke="#D7D0C2" stroke-width="2"/>
+  <text x="84" y="1372" font-family="'PingFang SC','Hiragino Sans GB','STHeiti','Helvetica Neue',Arial,sans-serif" font-size="25" font-weight="600" fill="#4B5563">评论区：你看新模型最先看什么？</text>
+  <text x="996" y="1372" font-family="'PingFang SC','Hiragino Sans GB','STHeiti','Helvetica Neue',Arial,sans-serif" font-size="25" font-weight="800" fill="#163B3A" text-anchor="end">08 / 08</text>
+</svg>

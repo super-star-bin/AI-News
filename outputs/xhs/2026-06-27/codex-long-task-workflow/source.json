@@ -1,0 +1,102 @@
+{
+  "topicId": "T20260627-002",
+  "slug": "2026-06-27_codex-long-task-workflow",
+  "brand": "AI宇宙",
+  "brandEn": "AI NEWS",
+  "column": "工具实测",
+  "source": "arXiv 2606.26959 / 本地实测",
+  "sourceUrl": "https://arxiv.org/abs/2606.26959",
+  "risk": "风险中",
+  "theme": "tool-test",
+  "title": "我用 Codex 跑了一次长任务工作流",
+  "caption": "今天做一条工具实测：长任务到底适不适合交给 Codex？结论是：适合，但不是甩一句话让它做完。arXiv 论文 The Shift to Agentic AI: Evidence from Codex 显示，Codex 使用中并发 Agent、skills 和长任务占比都在上升。我的本地实测是让 Codex 完成 2026-06-27 的每日待发布内容生产：选择 4 个 S 级来源，写每日链接和简报，更新 topics，生成事实核验、草稿、source.json、publish_text，再渲染卡片和跑数据校验。它适合处理多文件、长流程、可校验任务，但不能替你承担事实判断、发布风险和最终审核。",
+  "hashtags": ["Codex", "AI工具", "内容运营", "AI工作流", "小红书运营", "工具实测"],
+  "cards": [
+    {
+      "type": "cover",
+      "kicker": "工具实测 / 长任务",
+      "title": "长任务交给 AI\n先设检查点",
+      "subtitle": "Codex 适合跑流程，但不能替你承担责任",
+      "badge": "本地实测",
+      "visualTitle": "SOURCE -> DRAFT -> CARDS",
+      "visualSubtitle": "长任务要能恢复、能校验",
+      "footer": "结论：让 AI 跑流程，让人做判断"
+    },
+    {
+      "type": "text",
+      "kicker": "01 先说结论",
+      "title": "Codex 适合多文件、长流程、可校验任务",
+      "body": "前提是你要给它目录结构、事实规则、输出标准和验证命令。否则长任务只会把小错误放大。",
+      "callout": "长任务不是更长的提示词，而是更清楚的工作流",
+      "footer": "实测范围：本地小红书内容生产"
+    },
+    {
+      "type": "text",
+      "kicker": "02 论文背景",
+      "title": "Codex 使用正在转向 Agent 化",
+      "body": "arXiv 论文摘要称，Codex 使用中并发 Agent、skills 和超过 8 小时的长任务占比都在上升。",
+      "callout": "英文标题可理解为：从 Codex 证据看 AI 使用转向 Agent 化",
+      "footer": "来源：arXiv 2606.26959"
+    },
+    {
+      "type": "bullets",
+      "kicker": "03 我测了什么",
+      "title": "不是自动发布，而是跑完整内容流程",
+      "bullets": [
+        "选 4 个 S 级来源",
+        "写 brief 和 topics",
+        "生成草稿和核验",
+        "渲染卡片并校验"
+      ],
+      "callout": "输出收拢在 outputs/xhs/2026-06-27/",
+      "footer": "本地实测，不涉及账号登录态"
+    },
+    {
+      "type": "bullets",
+      "kicker": "04 做得好的地方",
+      "title": "它擅长把流程串起来",
+      "bullets": [
+        "按日期目录组织输出",
+        "正文和卡片同步",
+        "保留来源和限制",
+        "跑渲染和数据校验"
+      ],
+      "callout": "适合接机械但需要耐心的工作",
+      "footer": "前提是规范足够明确"
+    },
+    {
+      "type": "warning",
+      "kicker": "05 容易出问题",
+      "title": "长任务会放大早期错误",
+      "body": "来源没核验、路径没统一、正文和图文不同步，这些小问题在长流程里会一路传递到所有文件。",
+      "callout": "不能只说“帮我做完”，要给验收标准",
+      "footer": "工具提效不等于事实责任外包"
+    },
+    {
+      "type": "bullets",
+      "kicker": "06 适合任务",
+      "title": "这几类长任务适合交给它",
+      "bullets": [
+        "每日内容简报",
+        "竞品资料对比",
+        "会议纪要整理",
+        "发布检查清单"
+      ],
+      "callout": "不适合直接交给它：账号发布和高风险判断",
+      "footer": "仍需人工审核来源、正文和风险"
+    },
+    {
+      "type": "summary",
+      "kicker": "07 使用建议",
+      "title": "把长任务拆成 4 层",
+      "bullets": [
+        "输入来源",
+        "生成草稿",
+        "机器校验",
+        "人工审核"
+      ],
+      "callout": "值得收藏：让 AI 跑流程，让人做判断",
+      "footer": "评论区：你会把什么长任务交给 AI？"
+    }
+  ]
+}

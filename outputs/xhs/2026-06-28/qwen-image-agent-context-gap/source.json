@@ -1,0 +1,89 @@
+{
+  "topicId": "T20260628-005",
+  "slug": "2026-06-28_qwen-image-agent-context-gap",
+  "brand": "AI宇宙",
+  "brandEn": "AI NEWS",
+  "column": "AI Agent 应用观察",
+  "source": "arXiv 2606.26907",
+  "sourceUrl": "https://arxiv.org/abs/2606.26907",
+  "risk": "论文框架 / 未本地运行",
+  "theme": "agent-observation",
+  "title": "生图 Agent 的关键，不是更会画",
+  "caption": "今天的 AI Agent 观察来自论文 Qwen-Image-Agent: Bridging Context Gaps for Real-World Image Generation。中文可以理解为：Qwen 图像 Agent，尝试补齐真实生图任务里的上下文缺口。我的判断是：生图 Agent 的关键不只是画得更好看，而是能不能先把模糊需求补成完整任务。论文指出真实生图需求常常有 context gaps，也就是上下文缺口，并把规划、推理、检索、记忆和反馈接进生图流程。限制：这是论文框架，本账号未本地运行，也不能确认普通用户是否已经可直接使用。",
+  "hashtags": ["AIAgent", "AI绘画", "人工智能", "AI工具", "内容创作", "设计工具"],
+  "cards": [
+    {
+      "type": "cover",
+      "kicker": "Agent 观察",
+      "title": "生图 Agent 的关键\n不是更会画",
+      "subtitle": "而是先补齐上下文",
+      "badge": "论文观察",
+      "visualTitle": "CONTEXT → IMAGE",
+      "visualSubtitle": "先问完整，再生成",
+      "footer": "判断：真实生图不是一句提示词"
+    },
+    {
+      "type": "text",
+      "kicker": "01 先说结论",
+      "title": "生图难点是需求不完整",
+      "body": "真实工作里，用户很少把品牌、受众、实时信息、限制和修改反馈一次性写进提示词。",
+      "callout": "好图往往先来自好上下文",
+      "footer": "来源：arXiv 2606.26907"
+    },
+    {
+      "type": "text",
+      "kicker": "02 论文研究什么",
+      "title": "它关注 context gaps",
+      "body": "context gaps 可以理解为上下文缺口。论文认为真实生图任务常缺少隐含需求、领域知识、实时信息和反馈。",
+      "callout": "不是模型不会画，而是需求没补全",
+      "footer": "英文术语已补中文解释"
+    },
+    {
+      "type": "bullets",
+      "kicker": "03 Agent 能力",
+      "title": "它把 5 件事接进生图",
+      "bullets": [
+        "规划任务",
+        "推理约束",
+        "检索资料",
+        "记住反馈"
+      ],
+      "callout": "先把模糊需求变具体",
+      "footer": "论文还提到 feedback 迭代"
+    },
+    {
+      "type": "bullets",
+      "kicker": "04 两个场景",
+      "title": "内容创作者最该看",
+      "bullets": [
+        "新品海报：补卖点",
+        "知识封面：补背景",
+        "品牌图：补禁区",
+        "电商图：补渠道"
+      ],
+      "callout": "少写风格词，多给任务信息",
+      "footer": "适合内容、电商、产品运营"
+    },
+    {
+      "type": "warning",
+      "kicker": "05 限制",
+      "title": "这不是直接产品推荐",
+      "body": "这是论文框架。本账号没有本地运行，也不能确认普通用户是否已可直接使用。benchmark 表现不能直接等于你的业务效果。",
+      "callout": "可学习思路，不要当成交付承诺",
+      "footer": "限制：论文 / 未实测 / 不泛化"
+    },
+    {
+      "type": "summary",
+      "kicker": "06 怎么用",
+      "title": "写需求时补 5 类信息",
+      "bullets": [
+        "用途和渠道",
+        "目标受众",
+        "核心卖点",
+        "视觉禁区"
+      ],
+      "callout": "收藏：生图 Agent 下一步，是把需求问完整",
+      "footer": "评论区：你生图最常翻车在哪？"
+    }
+  ]
+}

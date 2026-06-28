@@ -1,0 +1,101 @@
+{
+  "topicId": "T20260626-018",
+  "slug": "2026-06-26_gui-agent-planning",
+  "brand": "AI宇宙",
+  "brandEn": "AI NEWS",
+  "column": "AI Agent 应用观察",
+  "source": "arXiv 2606.27330v1",
+  "sourceUrl": "https://arxiv.org/abs/2606.27330v1",
+  "risk": "风险中",
+  "theme": "agent-observation",
+  "title": "GUI Agent 不是会点按钮就够了",
+  "caption": "今天的 AI Agent 应用观察，来自一篇 2026 年 6 月 25 日提交到 arXiv 的论文：Empowering GUI Agents via Autonomous Experience Exploration and Hindsight Experience Utilization for Task Planning。中文可以理解为：通过自主经验探索和事后经验利用，提升 GUI Agent 的任务规划能力。我的判断是：这篇论文值得看，不是因为它又展示了一个会点按钮的 Agent，而是因为它把 GUI Agent 真正难的地方讲清楚了。难点不是识别按钮在哪里，而是能不能把复杂目标拆成可执行计划，并且在新网站、新流程、新异常里继续完成任务。摘要称，掌握低层原子技能不保证高层规划能力；高层任务训练带来更强的 OOD generalization。翻成普通话：会点按钮，不等于会办事。限制也要保留：摘要中的 7B 模型 30.6% accuracy 不能解读成小模型全面超过大模型。",
+  "hashtags": ["AIAgent", "GUIAgent", "AI论文", "自动化", "产品经理", "人工智能"],
+  "cards": [
+    {
+      "type": "cover",
+      "kicker": "Agent 观察 / arXiv",
+      "title": "会点按钮\n不等于会办事",
+      "subtitle": "GUI Agent 真正难在任务规划",
+      "badge": "论文变应用",
+      "visualTitle": "CLICK != PLAN",
+      "visualSubtitle": "从会点到会规划",
+      "footer": "判断：评估 Agent，不要只看演示视频"
+    },
+    {
+      "type": "text",
+      "kicker": "01 先说结论",
+      "title": "GUI Agent 不是会点击页面就够了",
+      "body": "这篇 2026 年 6 月 25 日 arXiv 论文提醒：真正难的是把复杂任务拆成可执行计划，并在新网站上泛化。",
+      "callout": "会点按钮，不等于会办完整件事",
+      "footer": "来源：arXiv 2606.27330v1"
+    },
+    {
+      "type": "bullets",
+      "kicker": "02 为什么普通人要看",
+      "title": "未来 AI 助手会操作后台",
+      "bullets": [
+        "报销要跨多个页面",
+        "客服要核对订单",
+        "CRM 要补字段去重",
+        "异常时还要调整"
+      ],
+      "callout": "低层操作会了，不代表高层规划会了",
+      "footer": "这是 GUI Agent 落地的关键差异"
+    },
+    {
+      "type": "text",
+      "kicker": "03 论文讲什么",
+      "title": "通过经验提升任务规划",
+      "body": "论文标题可理解为：通过自主经验探索和事后经验利用，提升 GUI Agent 的任务规划能力。",
+      "callout": "重点不是更会点，而是更会计划",
+      "footer": "英文标题已在正文中补充中文解释"
+    },
+    {
+      "type": "bullets",
+      "kicker": "04 方法关键词",
+      "title": "摘要称作者提出 PEEU",
+      "bullets": [
+        "自主探索环境",
+        "发现可用经验",
+        "利用事后经验",
+        "合成高层训练数据"
+      ],
+      "callout": "hindsight experience 可理解为事后经验",
+      "footer": "用于提升任务规划和跨网站泛化"
+    },
+    {
+      "type": "compare",
+      "kicker": "05 关键发现",
+      "title": "会操作，不等于会规划",
+      "leftTitle": "低层技能",
+      "leftItems": ["识别按钮", "点击输入", "提交表单"],
+      "rightTitle": "高层规划",
+      "rightItems": ["拆目标", "处理异常", "跨站泛化"],
+      "callout": "摘要称高层任务训练带来更强 OOD 泛化",
+      "footer": "OOD 指遇到新任务/新网站时的适应能力"
+    },
+    {
+      "type": "warning",
+      "kicker": "06 不要解读过头",
+      "title": "这不是“小模型全面\n超过大模型”",
+      "body": "摘要称其 7B 模型在真实世界 benchmark 上达到 30.6% accuracy，并超过 Qwen2.5-VL-32B。但这是特定方法和测试设置下的结果。",
+      "callout": "更稳妥的结论：高层任务经验很关键",
+      "footer": "限制：未阅读全文细节，未本地复现"
+    },
+    {
+      "type": "summary",
+      "kicker": "07 怎么判断",
+      "title": "评估 GUI Agent，问 5 个问题",
+      "bullets": [
+        "换网站还能完成吗",
+        "失败会不会重试",
+        "能解释计划吗",
+        "每步有没有日志",
+        "权限边界能控吗"
+      ],
+      "callout": "Agent 的下一步，是从会点到会规划",
+      "footer": "评论区：你希望 Agent 替你操作什么后台？"
+    }
+  ]
+}

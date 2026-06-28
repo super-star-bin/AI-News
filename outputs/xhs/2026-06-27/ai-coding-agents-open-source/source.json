@@ -1,0 +1,97 @@
+{
+  "topicId": "T20260627-004",
+  "slug": "2026-06-27_ai-coding-agents-open-source",
+  "brand": "AI宇宙",
+  "brandEn": "AI NEWS",
+  "column": "AI Agent 应用观察",
+  "source": "arXiv 2606.24429",
+  "sourceUrl": "https://arxiv.org/abs/2606.24429",
+  "risk": "风险中",
+  "theme": "agent-observation",
+  "title": "AI 写代码，已经不只出现在 PR 里",
+  "caption": "今天这篇 AI Agent 观察来自 arXiv 论文 Detecting AI Coding Agents in Open Source，中文可以理解为在开源中检测 AI 编程 Agent。我的判断是：这篇论文值得看，因为它提醒我们，AI 写代码的影响已经不只是有人用 AI 生成了一个 PR。论文摘要称，如果只用 bot-account 方法，只识别出 28,154 个 Claude Code 提交，占 3.3%；pull request census misses 79% of contributions，也就是只通过 PR 统计会漏掉很多贡献。限制也要保留：这是预印本，检测方法可能有误判和漏判，也不证明 AI 写的代码一定好或一定坏。更稳妥的结论是：AI 编程 Agent 已进入软件供应链视野，审查方式要跟上。",
+  "hashtags": ["AIAgent", "AI编程", "开源项目", "软件工程", "AI工具", "人工智能"],
+  "cards": [
+    {
+      "type": "cover",
+      "kicker": "Agent 观察 / arXiv",
+      "title": "AI 写代码\n不只出现在 PR 里",
+      "subtitle": "开源项目里的 Agent 痕迹，可能比你想的更隐蔽",
+      "badge": "论文变应用",
+      "visualTitle": "CODE AGENTS ≠ BOT ONLY",
+      "visualSubtitle": "别只盯 PR 和 bot 账号",
+      "footer": "判断：开源供应链要开始看 Agent 痕迹"
+    },
+    {
+      "type": "text",
+      "kicker": "01 先说结论",
+      "title": "AI 代码贡献不能只看 PR",
+      "body": "这篇论文提醒：AI 编程 Agent 的痕迹可能出现在普通提交、提交信息、配置文件、元数据和非 PR 工作流里。",
+      "callout": "只看显性 bot，很可能漏掉很多",
+      "footer": "来源：arXiv 2606.24429"
+    },
+    {
+      "type": "text",
+      "kicker": "02 论文研究什么",
+      "title": "它研究开源中的 AI coding agents",
+      "body": "AI coding agents 可以理解为 AI 编程 Agent。论文关注它们在开源开发中的采用情况和检测方法。",
+      "callout": "重点是识别痕迹，不是简单评价好坏",
+      "footer": "英文术语已补充中文解释"
+    },
+    {
+      "type": "bullets",
+      "kicker": "03 关键数字",
+      "title": "只看 bot 账号远远不够",
+      "bullets": [
+        "bot 方法识别 28,154 个提交",
+        "只占 3.3%",
+        "月度 Agent 提交超 320,000",
+        "覆盖 17,295 个项目"
+      ],
+      "callout": "这些数字来自论文摘要，不能泛化到所有平台",
+      "footer": "重点是审查视角要升级"
+    },
+    {
+      "type": "warning",
+      "kicker": "04 PR 也不够",
+      "title": "只统计 PR 会漏掉\n很多贡献",
+      "body": "摘要称 pull request census misses 79% of contributions。它可以理解为：只通过代码合并请求统计，会漏掉很多 Agent 活动。",
+      "callout": "AI 贡献不一定以显眼的 PR 形式出现",
+      "footer": "PR 是 pull request，也就是代码合并请求"
+    },
+    {
+      "type": "bullets",
+      "kicker": "05 为什么重要",
+      "title": "这不只和程序员有关",
+      "bullets": [
+        "开源依赖可能含 AI 贡献",
+        "内部工具也会被影响",
+        "审查流程要能追溯",
+        "责任边界要重新定义"
+      ],
+      "callout": "AI Agent 正在进入软件供应链问题",
+      "footer": "适合开发、产品、安全团队一起看"
+    },
+    {
+      "type": "warning",
+      "kicker": "06 不要解读过头",
+      "title": "这不是“AI 接管开源”",
+      "body": "论文是预印本，检测方法可能有误判和漏判。它不证明 AI 写的代码一定好，也不证明所有项目都被 Agent 接管。",
+      "callout": "更稳妥的结论：审查方式要升级",
+      "footer": "限制：预印本 / 检测方法 / 不能泛化"
+    },
+    {
+      "type": "summary",
+      "kicker": "07 可以怎么做",
+      "title": "团队先补 4 个检查",
+      "bullets": [
+        "标注 AI 辅助贡献",
+        "高风险代码人工 review",
+        "保留 Agent 工具日志",
+        "纳入安全和合规规则"
+      ],
+      "callout": "值得收藏：AI 编程 Agent 的下一步，是进入审查流程",
+      "footer": "评论区：AI 代码应该主动标注吗？"
+    }
+  ]
+}

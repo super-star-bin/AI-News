@@ -1,0 +1,105 @@
+{
+  "topicId": "T20260626-015",
+  "slug": "2026-06-26_agentic-ai-work-shift",
+  "brand": "AI宇宙",
+  "brandEn": "AI NEWS",
+  "column": "今日值得看",
+  "source": "OpenAI 官方文章 / 已核验",
+  "sourceUrl": "https://openai.com/index/how-agents-are-transforming-work/",
+  "risk": "风险中",
+  "theme": "today-signal",
+  "title": "别只学提示词，要学会派任务",
+  "caption": "今天这条 AI 动态，普通职场人值得认真看一下。OpenAI 6 月 25 日发布文章 How agents are transforming work，中文可以理解为“Agent 正在怎样改变工作”。我觉得它真正值得关注的点不是某个工具又变强了，而是 AI 的工作单位正在从“一次问答”变成“一段可委托的任务”。过去我们用 AI，常见方式是问一句、答一句。Agent 不一样，它更像是你把一个小项目交出去：先读材料，再拆步骤，再生成文件，最后给你一个可以检查的结果。对普通职场人来说，下一步不是多背提示词，而是学会拆任务、设边界、看中间结果、验收产出。限制也要说清楚：这些数据主要来自 OpenAI 和 Codex 场景，任务时长是模型估计，不能直接代表所有公司。",
+  "hashtags": ["AI工具", "AI资讯", "Agent", "职场效率", "OpenAI", "人工智能"],
+  "cards": [
+    {
+      "type": "cover",
+      "kicker": "今日值得看 / 已核验",
+      "title": "别只学提问\n要学会派任务",
+      "subtitle": "AI 的工作单位正在变",
+      "badge": "OpenAI 官方研究",
+      "visualTitle": "CHAT -> TASK",
+      "visualSubtitle": "从问答到委托任务",
+      "footer": "判断：值得看，但不能当成所有公司的样本"
+    },
+    {
+      "type": "text",
+      "kicker": "01 先说结论",
+      "title": "AI 正在从给答案，变成接任务",
+      "body": "OpenAI 这篇文章最值得看的不是某个新功能，而是一个趋势：Agent 正在把一次问答变成一段可委托的工作",
+      "callout": "普通人要练的不是更多话术，而是任务设计",
+      "footer": "来源：OpenAI 官方文章，2026-06-25"
+    },
+    {
+      "type": "bullets",
+      "kicker": "02 发生了什么",
+      "title": "Codex 使用正在走出工程岗位",
+      "bullets": [
+        "用户交给它更长任务",
+        "非开发者增长很快",
+        "法务财务招聘也在用",
+        "跨职能任务开始增加"
+      ],
+      "callout": "这说明 Agent 不是只属于程序员的工具",
+      "footer": "OpenAI 称这些趋势来自 Codex 使用数据"
+    },
+    {
+      "type": "compare",
+      "kicker": "03 学习重点变了",
+      "title": "普通用户该换一个学习重点",
+      "leftTitle": "旧习惯",
+      "leftItems": ["写提示词", "等一个答案", "手动串流程"],
+      "rightTitle": "新能力",
+      "rightItems": ["拆任务", "给边界", "验收结果"],
+      "callout": "不会写代码的人，也要学会管理 Agent 的工作过程",
+      "footer": "不是人人变程序员，而是更多岗位能处理相邻任务"
+    },
+    {
+      "type": "bullets",
+      "kicker": "04 具体怎么变",
+      "title": "这些工作可以先练起来",
+      "bullets": [
+        "运营：活动复盘表",
+        "产品：竞品流程对比",
+        "内容：资料拆选题",
+        "职能：纪要转清单"
+      ],
+      "callout": "从低风险、可复核、重复性强的任务开始",
+      "footer": "适合职场人做效率工具和工作流升级"
+    },
+    {
+      "type": "bullets",
+      "kicker": "05 可以照抄",
+      "title": "下次别只写“帮我整理一下”",
+      "bullets": [
+        "背景是什么",
+        "输入材料有哪些",
+        "输出成什么格式",
+        "哪些事情不能做"
+      ],
+      "callout": "再加一句：先给中间结果，等我确认后继续",
+      "footer": "任务越清楚，Agent 越不容易跑偏"
+    },
+    {
+      "type": "warning",
+      "kicker": "06 不要解读过头",
+      "title": "这不是所有公司的\n通用结论",
+      "body": "这些数据主要来自 OpenAI 和 Codex 场景。任务时长由模型估计，只能看方向，不能当成精确节省工时",
+      "callout": "更稳妥的说法：Agent 值得关注，但要从低风险任务开始",
+      "footer": "限制：OpenAI 自家样本 / 模型估计 / 未做通用验证"
+    },
+    {
+      "type": "summary",
+      "kicker": "07 今天怎么用",
+      "title": "今天可以先选一个低风险任务",
+      "bullets": [
+        "整理会议纪要",
+        "对比多个方案",
+        "资料转成表格",
+        "生成检查清单"
+      ],
+      "callout": "值得收藏：AI 能力提升后，管理任务比堆提示词更重要",
+      "footer": "评论区：你最想交给 Agent 的工作是什么？"
+    }
+  ]
+}

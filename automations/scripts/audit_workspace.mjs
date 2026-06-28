@@ -10,6 +10,8 @@ const requiredDirs = [
   "factchecks",
   "reviews",
   "templates",
+  "assets/brand",
+  "outputs/xhs",
   "automations/scripts",
   ".agents/skills/xhs-ai-operator/references"
 ];
@@ -17,6 +19,9 @@ const requiredDirs = [
 const requiredFiles = [
   "AGENTS.md",
   "checklist.md",
+  "docs/xhs_design_spec.md",
+  "assets/brand/logo_avatar.svg",
+  "assets/brand/logo_lockup.svg",
   "data/topics.csv",
   "data/posts.csv",
   "data/user_needs.csv",
@@ -30,6 +35,8 @@ const requiredFiles = [
   "templates/review_template.md",
   ".agents/skills/xhs-ai-operator/SKILL.md",
   "automations/scripts/fetch_sources.mjs",
+  "automations/scripts/format_topics.mjs",
+  "automations/scripts/render_xhs_cards.mjs",
   "automations/scripts/validate_data.mjs"
 ];
 

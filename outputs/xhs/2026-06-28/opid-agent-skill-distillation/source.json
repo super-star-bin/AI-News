@@ -1,0 +1,89 @@
+{
+  "topicId": "T20260628-003",
+  "slug": "2026-06-28_opid-agent-skill-distillation",
+  "brand": "AI宇宙",
+  "brandEn": "AI NEWS",
+  "column": "开源项目拆解",
+  "source": "GitHub jinyangwu/OPID + arXiv 2606.26790",
+  "sourceUrl": "https://github.com/jinyangwu/OPID",
+  "risk": "未本地安装实测",
+  "theme": "open-source",
+  "title": "OPID 值得收藏，但不适合普通人直接跑",
+  "caption": "今天拆一个偏研究向的开源项目：jinyangwu/OPID。OPID 的论文标题是 On-Policy Skill Distillation for Efficient Long-Horizon LLM Agent Learning，中文可以理解为从模型实际执行过的任务轨迹里提炼可复用技能。我的判断是：OPID 值得收藏，但不适合普通人直接跑。它不是开箱即用办公 Agent，而是一个学习 Agent 训练方法的项目。GitHub 仓库公开代码并显示 MIT license；论文摘要称它把 on-policy 轨迹转成 hierarchical hindsight skills，并在 ALFWorld、Search-QA、WebShop 等任务上提升表现。限制：本账号未本地安装实测，依赖和评测环境门槛较高。",
+  "hashtags": ["开源项目", "AIAgent", "GitHub", "AI论文", "人工智能", "LLM"],
+  "cards": [
+    {
+      "type": "cover",
+      "kicker": "开源项目拆解",
+      "title": "OPID 值得收藏\n但别急着跑",
+      "subtitle": "这是研究项目，不是办公工具",
+      "badge": "GitHub 拆解",
+      "visualTitle": "AGENT SKILLS",
+      "visualSubtitle": "把成功轨迹沉淀成技能",
+      "footer": "判断：适合学习 Agent 训练思路"
+    },
+    {
+      "type": "text",
+      "kicker": "01 项目是什么",
+      "title": "从轨迹里提炼技能",
+      "body": "OPID 关注长程 LLM Agent 学习。可以理解为：让 Agent 从自己完成任务的轨迹中提炼可复用技能。",
+      "callout": "重点不是多试几次，而是沉淀经验",
+      "footer": "来源：GitHub + arXiv"
+    },
+    {
+      "type": "bullets",
+      "kicker": "02 已核验事实",
+      "title": "先看仓库信息",
+      "bullets": [
+        "官方实现仓库",
+        "License 显示 MIT",
+        "有安装说明",
+        "配套 arXiv 论文"
+      ],
+      "callout": "这是可收藏的研究实现",
+      "footer": "未做本地安装实测"
+    },
+    {
+      "type": "text",
+      "kicker": "03 为什么重要",
+      "title": "Agent 难在长任务",
+      "body": "很多 Agent 不是不会回答，而是在多步骤任务里走偏、重复试错、不会复用成功经验。",
+      "callout": "长任务需要阶段性技能",
+      "footer": "适合理解 Agent 训练方向"
+    },
+    {
+      "type": "bullets",
+      "kicker": "04 两个场景",
+      "title": "可以这样理解",
+      "bullets": [
+        "购物：先找再比较",
+        "搜索：检索再验证",
+        "任务：拆成阶段",
+        "成功：沉淀成技能"
+      ],
+      "callout": "不是单次回答，而是任务流程",
+      "footer": "场景来自论文任务方向转译"
+    },
+    {
+      "type": "warning",
+      "kicker": "05 上手门槛",
+      "title": "普通人不要直接跑",
+      "body": "README 涉及 Python、vLLM、flash-attn、OpenAI-compatible endpoint 和多个评测环境。本账号没有本地跑通。",
+      "callout": "不要把研究代码当即用产品",
+      "footer": "风险：依赖复杂 / 资源要求不确定"
+    },
+    {
+      "type": "summary",
+      "kicker": "06 收藏判断",
+      "title": "适合谁看",
+      "bullets": [
+        "Agent 研究者",
+        "AI 工程师",
+        "开源项目观察",
+        "长任务训练学习"
+      ],
+      "callout": "收藏：OPID 的价值在训练思路",
+      "footer": "评论区：想看上手教程还是拆解？"
+    }
+  ]
+}

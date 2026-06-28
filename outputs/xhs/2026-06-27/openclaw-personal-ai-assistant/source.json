@@ -1,0 +1,103 @@
+{
+  "topicId": "T20260627-003",
+  "slug": "2026-06-27_openclaw-personal-ai-assistant",
+  "brand": "AI宇宙",
+  "brandEn": "AI NEWS",
+  "column": "开源项目拆解",
+  "source": "GitHub README",
+  "sourceUrl": "https://github.com/openclaw/openclaw",
+  "risk": "风险中",
+  "theme": "open-source",
+  "title": "OpenClaw 不是万能助手，先看权限边界",
+  "caption": "今天拆一个开源项目：OpenClaw。先说判断：它值得收藏，但不适合所有人直接部署。OpenClaw 的 GitHub README 将它描述为 open-source, personal AI assistant，中文可以理解为开源个人 AI 助手。README 还写到，它运行在用户自己的设备上，并提供 local-first gateway，也就是本地优先网关，用来把通道连接到单用户工作站。我的判断是：OpenClaw 的价值不只是个人助手，而是提醒我们个人 Agent 一旦进入消息、设备和本地工作流，真正重要的是通道、配对、权限、沙箱和凭据管理。本文未做本地安装实测，不写成已跑通。",
+  "hashtags": ["开源项目", "AIAgent", "GitHub", "AI工具", "个人效率", "开发者"],
+  "cards": [
+    {
+      "type": "cover",
+      "kicker": "开源项目拆解 / GitHub",
+      "title": "个人 AI 助手\n先看权限边界",
+      "subtitle": "OpenClaw 值得收藏，但不适合所有人直接部署",
+      "badge": "开源项目",
+      "visualTitle": "LOCAL × CHANNELS",
+      "visualSubtitle": "个人 Agent 要先看安全边界",
+      "footer": "判断：Agent 越贴身，权限越重要"
+    },
+    {
+      "type": "text",
+      "kicker": "01 先说结论",
+      "title": "OpenClaw 值得收藏，但别急着部署",
+      "body": "它不是点一下就拥有万能助理，更适合有技术基础的人理解个人 Agent 如何连接渠道、本地设备和安全边界。",
+      "callout": "先看权限，再看功能",
+      "footer": "来源：GitHub README"
+    },
+    {
+      "type": "text",
+      "kicker": "02 它是什么",
+      "title": "README 称它是个人 AI 助手",
+      "body": "open-source, personal AI assistant 可以理解为开源个人 AI 助手。README 还强调它运行在用户自己的设备上。",
+      "callout": "英文描述已转成中文解释：重点是开源、个人、设备侧",
+      "footer": "未做本地安装实测"
+    },
+    {
+      "type": "bullets",
+      "kicker": "03 核心看点",
+      "title": "它不只是一个聊天框",
+      "bullets": [
+        "local-first gateway",
+        "inbox 收件箱",
+        "channels 多通道",
+        "pairing 配对连接"
+      ],
+      "callout": "local-first gateway 可理解为本地优先网关",
+      "footer": "重点是个人 Agent 基础设施"
+    },
+    {
+      "type": "bullets",
+      "kicker": "04 真实场景",
+      "title": "适合用来理解这两类问题",
+      "bullets": [
+        "多消息渠道如何汇总",
+        "本地工作站如何接入",
+        "谁能连接个人助手",
+        "哪些任务必须进沙箱"
+      ],
+      "callout": "个人助手越贴身，越不能只看功能清单",
+      "footer": "这页是账号判断"
+    },
+    {
+      "type": "warning",
+      "kicker": "05 上手门槛",
+      "title": "不适合所有普通用户\n直接部署",
+      "body": "README 提到 Node.js、命令行启动和本地配置。它更适合开发者、独立黑客和愿意折腾的人。",
+      "callout": "不要把收藏价值等同于低门槛可用",
+      "footer": "限制：未本地实测，未验证稳定性"
+    },
+    {
+      "type": "bullets",
+      "kicker": "06 部署前先问",
+      "title": "个人 Agent 先问 5 个问题",
+      "bullets": [
+        "接入哪些通道",
+        "主会话权限多大",
+        "沙箱怎么限制",
+        "凭据放在哪里",
+        "出错能不能停"
+      ],
+      "callout": "权限和凭据，比功能数量更重要",
+      "footer": "适合收藏成部署检查清单"
+    },
+    {
+      "type": "summary",
+      "kicker": "07 一句话总结",
+      "title": "个人 Agent 真正难的不是会聊天",
+      "bullets": [
+        "通道要受控",
+        "权限要清楚",
+        "沙箱要明确",
+        "日志要能追"
+      ],
+      "callout": "值得收藏：Agent 越贴身，边界越重要",
+      "footer": "评论区：你会让 AI 助手接入哪些渠道？"
+    }
+  ]
+}

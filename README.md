@@ -14,6 +14,9 @@
 | `.agents/skills/xhs-ai-operator/` | 小红书 AI 运营 Skill | repo 级 Codex skill，封装每日链接收集、选题、核验、草稿和复盘流程。 |
 | `sources/` | 信源库 | 存放 RSS/网页信源、人物观察名单、来源分级规则和网络白名单。 |
 | `data/` | 本地主库 | 存放候选选题、已发布笔记数据、评论/私信需求等 CSV 数据。 |
+| `data/topics.md` | 选题浏览表 | 由 `data/topics.csv` 自动生成的对齐表格视图，用于在 VSCode/GitHub 中快速浏览和审核。 |
+| `assets/brand/` | 品牌资产 | 存放账号 Logo、头像、横版标识和后续统一视觉资产。 |
+| `outputs/xhs/` | 发布素材 | 存放每篇小红书图文的结构化源数据、SVG 源文件、PNG 发布图和发布说明。 |
 | `inbox/` | 输入箱 | 存放每日收集到的原始链接和人工补充材料。 |
 | `inbox/screenshots/` | 截图素材 | 存放工具实测截图、网页截图和发布前素材。 |
 | `briefs/` | 简报库 | 存放每日 AI 选题简报和周简报。 |
@@ -67,6 +70,8 @@ git diff
 ```bash
 npm run fetch:today
 npm run translate:topics
+npm run format:topics
+npm run render:xhs -- outputs/xhs/2026-06-25/realtime-voice-ai/source.json
 npm run validate:data
 npm run audit
 ```
@@ -91,3 +96,19 @@ npm run audit
 ```bash
 npm run translate:topics
 ```
+
+刷新选题浏览表：
+
+```bash
+npm run format:topics
+```
+
+`data/topics.csv` 是唯一机器可读主库；`data/topics.md` 只作为对齐浏览视图，不要手工编辑。
+
+生成小红书图文素材：
+
+```bash
+npm run render:xhs -- outputs/xhs/2026-06-25/realtime-voice-ai/source.json
+```
+
+图文必须遵守 `docs/xhs_design_spec.md`。发布用 PNG 在 `outputs/xhs/.../cards/`，Logo 在 `assets/brand/`。

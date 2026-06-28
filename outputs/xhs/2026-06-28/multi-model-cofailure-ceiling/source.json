@@ -1,0 +1,95 @@
+{
+  "topicId": "T20260628-004",
+  "slug": "2026-06-28_multi-model-cofailure-ceiling",
+  "brand": "AI宇宙",
+  "brandEn": "AI NEWS",
+  "column": "论文变应用",
+  "source": "arXiv 2606.27288",
+  "sourceUrl": "https://arxiv.org/abs/2606.27288",
+  "risk": "预印本 / 未复现",
+  "theme": "paper-to-application",
+  "title": "问多个 AI，不等于答案更可靠",
+  "caption": "今天这篇论文变应用讲一个常见习惯：同一个问题，多问几个 AI。论文 When Does Combining Language Models Help? 中文可理解为“什么时候把多个语言模型组合起来真的有帮助”。我的判断是：问多个 AI 有价值，但“几个 AI 都这么说”不能直接当成事实证明。论文分析 67 个语言模型、21 家提供方，并提出 co-failure ceiling（共同失败上限）：如果多个模型在同一个问题上都会错，组合系统也很难从这些错误答案里选出正确答案。限制：这是 arXiv 预印本，本账号未复现实验；它不是说多模型组合完全没用，而是强调要有路由、验证和外部证据。",
+  "hashtags": ["AI论文", "人工智能", "AI工具", "提示词", "知识工作", "AI避坑"],
+  "cards": [
+    {
+      "type": "cover",
+      "kicker": "论文变应用",
+      "title": "问多个 AI\n不等于更可靠",
+      "subtitle": "一致回答也可能一起错",
+      "badge": "论文转应用",
+      "visualTitle": "CONSENSUS ≠ FACT",
+      "visualSubtitle": "共同失败要警惕",
+      "footer": "判断：多模型不是免思考按钮"
+    },
+    {
+      "type": "text",
+      "kicker": "01 先说结论",
+      "title": "一致不是事实证明",
+      "body": "多个 AI 给出相同答案，只能说明它们输出一致；如果它们在同一类问题上一起错，一致会放大误判。",
+      "callout": "多个模型一致，也要看证据",
+      "footer": "来源：arXiv 2606.27288"
+    },
+    {
+      "type": "text",
+      "kicker": "02 论文研究什么",
+      "title": "67 个模型，21 家提供方",
+      "body": "论文研究语言模型组合什么时候有帮助，并提出 co-failure ceiling，也就是共同失败上限。",
+      "callout": "关键不是错多少，而是是否一起错",
+      "footer": "英文术语已补中文解释"
+    },
+    {
+      "type": "compare",
+      "kicker": "03 关键发现",
+      "title": "多模型有效有条件",
+      "leftTitle": "有帮助",
+      "rightTitle": "风险高",
+      "leftItems": [
+        "错误互补",
+        "有路由",
+        "有验证"
+      ],
+      "rightItems": [
+        "一起失败",
+        "只看投票",
+        "无外部证据"
+      ],
+      "callout": "组合不是简单求多数",
+      "footer": "共同失败决定上限"
+    },
+    {
+      "type": "bullets",
+      "kicker": "04 两个场景",
+      "title": "普通用户最容易踩坑",
+      "bullets": [
+        "报告：一起重复旧信息",
+        "代码：都没运行测试",
+        "调研：来源互相污染",
+        "决策：把一致当事实"
+      ],
+      "callout": "一致回答只是信号",
+      "footer": "适合知识工作者收藏"
+    },
+    {
+      "type": "warning",
+      "kicker": "05 不要解读过头",
+      "title": "不是说多模型没用",
+      "body": "论文是预印本，本账号未复现实验。它提醒的是：多模型要配合查询路由、外部证据、验证器或人工复核。",
+      "callout": "有效关键：分工和验证",
+      "footer": "限制：预印本 / 未复现"
+    },
+    {
+      "type": "summary",
+      "kicker": "06 怎么用",
+      "title": "让模型分角色",
+      "bullets": [
+        "一个生成方案",
+        "一个找反例",
+        "一个查来源",
+        "一个按标准验收"
+      ],
+      "callout": "收藏：多问几个，不如多做验证",
+      "footer": "评论区：你担心 AI 一起错在哪？"
+    }
+  ]
+}

@@ -5,10 +5,12 @@
   "type": "module",
   "scripts": {
     "fetch:today": "node automations/scripts/fetch_sources.mjs",
+    "format:topics": "node automations/scripts/format_topics.mjs",
     "validate:data": "node automations/scripts/validate_data.mjs",
     "audit": "node automations/scripts/audit_workspace.mjs",
     "record:post": "node automations/scripts/record_post.mjs",
     "translate:topics": "node automations/scripts/translate_topics.mjs",
+    "render:xhs": "node automations/scripts/render_xhs_cards.mjs",
     "review:weekly": "node automations/scripts/weekly_review_stub.mjs"
   },
   "engines": {

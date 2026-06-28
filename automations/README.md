@@ -12,6 +12,8 @@
 ```bash
 npm run fetch:today
 npm run translate:topics
+npm run format:topics
+npm run render:xhs -- outputs/xhs/2026-06-25/realtime-voice-ai/source.json
 npm run validate:data
 npm run audit
 npm run record:post -- --topic-id T20260625-004 --title "标题" --url "https://www.xiaohongshu.com/..."
@@ -40,6 +42,14 @@ npm run translate:topics
 
 该命令会补齐 `选题标题中文翻译` 和 `AI摘要中文翻译`。如果原文已经是中文，对应翻译列可以留空。
 
+刷新人工浏览表格：
+
+```bash
+npm run format:topics
+```
+
+`data/topics.csv` 是机器处理的主库，保持标准 CSV；`data/topics.md` 是自动生成的对齐浏览视图，不要手工编辑。
+
 ## 网络权限边界
 
 - 优先使用 `sources/network_allowlist.md` 中的公开域名。
@@ -63,3 +73,25 @@ npm run translate:topics
 ```bash
 npm run record:post -- --topic-id T20260625-004 --title "标题" --url "https://www.xiaohongshu.com/..." --views 0 --likes 0 --collects 0 --comments 0
 ```
+
+## 图文素材生成
+
+先把单篇图文源数据写入：
+
+```text
+outputs/xhs/YYYY-MM-DD/topic-slug/source.json
+```
+
+再运行：
+
+```bash
+npm run render:xhs -- outputs/xhs/YYYY-MM-DD/topic-slug/source.json
+```
+
+脚本会生成：
+
+- `assets/brand/logo_avatar.png`
+- `assets/brand/logo_lockup.png`
+- `outputs/xhs/YYYY-MM-DD/topic-slug/cards/*.png`
+
+所有图文必须遵守 `docs/xhs_design_spec.md`。

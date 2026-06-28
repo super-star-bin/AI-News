@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="300" viewBox="0 0 920 300">
+  <rect width="920" height="300" rx="52" fill="#F6F2E8"/>
+  
+  <g transform="translate(68 58)">
+    <rect x="0" y="0" width="184" height="184" rx="37" fill="#163B3A"/>
+    <ellipse cx="92" cy="92" rx="62.56" ry="33.12" fill="none" stroke="#FFFDF7" stroke-width="8.28" transform="rotate(-24 92 92)"/>
+    <ellipse cx="92" cy="92" rx="62.56" ry="33.12" fill="none" stroke="#FFFDF7" stroke-width="8.28" transform="rotate(24 92 92)"/>
+    <circle cx="138" cy="51.52" r="13.799999999999999" fill="#F2C94C"/>
+    <text x="92" y="114.08" font-family="'PingFang SC','Hiragino Sans GB','STHeiti','Helvetica Neue',Arial,sans-serif" font-size="62.56" font-weight="800" fill="#FFFDF7" text-anchor="middle">AI</text>
+  </g>
+  <text x="292" y="130" font-family="'PingFang SC','Hiragino Sans GB','STHeiti','Helvetica Neue',Arial,sans-serif" font-size="72" font-weight="900" fill="#111827">AI宇宙</text>
+  <text x="296" y="194" font-family="'PingFang SC','Hiragino Sans GB','STHeiti','Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="800" fill="#009B95" letter-spacing="6">AI NEWS</text>
+  <text x="296" y="244" font-family="'PingFang SC','Hiragino Sans GB','STHeiti','Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="600" fill="#4B5563">筛掉 AI 噪音，留下可用判断</text>
+</svg>

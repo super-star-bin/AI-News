@@ -1,0 +1,103 @@
+{
+  "topicId": "T20260627-001",
+  "slug": "2026-06-27_gpt-5-6-limited-preview",
+  "brand": "AI宇宙",
+  "brandEn": "AI NEWS",
+  "column": "今日值得看",
+  "source": "OpenAI 官方文章",
+  "sourceUrl": "https://openai.com/index/previewing-gpt-5-6-sol/",
+  "risk": "风险中",
+  "theme": "ai-news",
+  "title": "GPT-5.6 先别只看跑分",
+  "caption": "今天这条 AI 动态值得看，但建议先别只看跑分。OpenAI 在 2026 年 6 月 26 日发布官方文章 Previewing GPT-5.6 Sol，中文可以理解为预览 GPT-5.6 Sol。文章介绍 GPT-5.6 系列，并提到 Sol、Terra、Luna 三个模型，还写到 GPT-5.6 Sol 会先通过 API 和 Codex 向 select partners 开放。我的判断是：这条动态真正值得关注的地方，不只是模型更强，而是前沿模型发布正在变得更分层。普通用户和产品运营更应该看开放范围、使用入口、成本、任务适配和限制条件。本文只基于官方文章整理，未做本地 API 实测，不能写成人人可用。",
+  "hashtags": ["AI资讯", "OpenAI", "GPT56", "AI工具", "产品经理", "人工智能"],
+  "cards": [
+    {
+      "type": "cover",
+      "kicker": "今日值得看 / OpenAI",
+      "title": "GPT-5.6\n先别只看跑分",
+      "subtitle": "新模型发布，先看开放范围、入口和成本",
+      "badge": "官方预览",
+      "visualTitle": "MODEL != WORKFLOW",
+      "visualSubtitle": "强不强之外，还要看能不能用",
+      "footer": "判断：追新模型前，先读懂开放范围"
+    },
+    {
+      "type": "text",
+      "kicker": "01 先说结论",
+      "title": "这条动态值得看，但别只看强不强",
+      "body": "OpenAI 发布 GPT-5.6 系列受限预览。普通用户更该看开放范围、任务类型、成本、安全边界和什么时候能用。",
+      "callout": "新模型发布，正在变成分层开放",
+      "footer": "来源：OpenAI 官方文章"
+    },
+    {
+      "type": "bullets",
+      "kicker": "02 官方说了什么",
+      "title": "GPT-5.6 系列包括三个名字",
+      "bullets": [
+        "Sol：偏旗舰能力",
+        "Terra：偏均衡路线",
+        "Luna：偏速度和成本",
+        "先向 select partners 开放"
+      ],
+      "callout": "select partners 可理解为经过选择的合作伙伴",
+      "footer": "不要写成所有用户已经可用"
+    },
+    {
+      "type": "text",
+      "kicker": "03 为什么重要",
+      "title": "前沿模型不再只是按钮更新",
+      "body": "它更像一套分层系统：谁先能用、在哪个入口用、上下文多长、价格多少、是否支持长任务和 Agent 工作流。",
+      "callout": "普通用户要学会看发布说明",
+      "footer": "重点是可用性，不只是模型名"
+    },
+    {
+      "type": "bullets",
+      "kicker": "04 两个场景",
+      "title": "普通用户该怎么代入",
+      "bullets": [
+        "产品运营：先确认能否接入",
+        "内容创作者：别急着写人人可用教程",
+        "企业团队：先算真实成本",
+        "开发者：看 API 和 Codex 范围"
+      ],
+      "callout": "能不能进工作流，比听起来多强更重要",
+      "footer": "这页是账号判断，不是官方承诺"
+    },
+    {
+      "type": "warning",
+      "kicker": "05 不要解读过头",
+      "title": "这不是“所有用户\n已经能用 GPT-5.6”",
+      "body": "官方文章写的是 limited preview，也就是受限预览。能力、价格和开放范围，都要以官方最新说明为准。",
+      "callout": "本文未做本地 API 实测",
+      "footer": "限制：官方信息 / 受限预览 / 未实测"
+    },
+    {
+      "type": "bullets",
+      "kicker": "06 阅读清单",
+      "title": "新模型发布，先看 5 项",
+      "bullets": [
+        "是否公开可用",
+        "是否支持你的任务",
+        "输入输出成本多少",
+        "缓存和上下文怎么计费",
+        "安全和合规限制是什么"
+      ],
+      "callout": "这比单看跑分更接近真实决策",
+      "footer": "适合产品、运营和团队选型"
+    },
+    {
+      "type": "summary",
+      "kicker": "07 一句话总结",
+      "title": "追新模型，不如先学会读发布说明",
+      "bullets": [
+        "看清开放范围",
+        "看清使用入口",
+        "看清真实成本",
+        "看清风险边界"
+      ],
+      "callout": "值得收藏：强不强之外，还要看能不能进你的工作流",
+      "footer": "评论区：你看新模型最先看什么？"
+    }
+  ]
+}

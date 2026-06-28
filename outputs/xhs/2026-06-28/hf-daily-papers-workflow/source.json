@@ -1,0 +1,89 @@
+{
+  "topicId": "T20260628-002",
+  "slug": "2026-06-28_hf-daily-papers-workflow",
+  "brand": "AI宇宙",
+  "brandEn": "AI NEWS",
+  "column": "工具实测",
+  "source": "Hugging Face Daily Papers + 本地浏览实测",
+  "sourceUrl": "https://huggingface.co/papers",
+  "risk": "选题入口 / 需回源核验",
+  "theme": "tool-test",
+  "title": "我用 Hugging Face 做每日论文雷达",
+  "caption": "今天做一个工具实测：Hugging Face Daily Papers。中文可以理解为 Hugging Face 每日论文页。我的结论是：它很适合做 AI 账号的每日选题雷达，但不能直接当成事实核验工具。我今天实际用它筛出 OPID、Qwen-Image-Agent、GUI vs CLI computer-use agents、多模型共同失败等线索。优点是聚合快、可分栏目、适合找内容角度；限制是页面热度、点赞和排序不等于论文质量。发布前必须继续打开 arXiv、GitHub、模型卡或官方项目页核验。",
+  "hashtags": ["HuggingFace", "AI论文", "工具实测", "AI工具", "内容运营", "人工智能"],
+  "cards": [
+    {
+      "type": "cover",
+      "kicker": "工具实测",
+      "title": "我用 Hugging Face\n做每日论文雷达",
+      "subtitle": "适合发现线索，不适合替你下结论",
+      "badge": "实测工作流",
+      "visualTitle": "PAPER RADAR",
+      "visualSubtitle": "先发现，再核验",
+      "footer": "判断：这是选题入口，不是事实终点"
+    },
+    {
+      "type": "text",
+      "kicker": "01 实测结论",
+      "title": "适合做选题雷达",
+      "body": "它能快速聚合每日论文，适合内容创作者先扫方向；但具体事实必须回到 arXiv、GitHub 或模型卡核验。",
+      "callout": "发现线索很快，下结论要慢",
+      "footer": "来源：huggingface.co/papers"
+    },
+    {
+      "type": "text",
+      "kicker": "02 我怎么测",
+      "title": "今天用它筛了 4 类线索",
+      "body": "从页面继续筛出 OPID、Qwen-Image-Agent、GUI vs CLI、多模型共同失败等题目，再决定适合哪个栏目。",
+      "callout": "先看标题，再找一手来源",
+      "footer": "本地浏览实测：不登录可查看列表"
+    },
+    {
+      "type": "bullets",
+      "kicker": "03 优点",
+      "title": "它解决的是发现问题",
+      "bullets": [
+        "聚合速度快",
+        "标题便于扫读",
+        "可快速分栏目",
+        "适合每日固定流程"
+      ],
+      "callout": "适合单人运营搭建选题池",
+      "footer": "不是替代论文阅读"
+    },
+    {
+      "type": "bullets",
+      "kicker": "04 两个场景",
+      "title": "谁会真正用得上",
+      "bullets": [
+        "AI 内容创作者",
+        "产品研究人员",
+        "竞品观察",
+        "技术趋势跟踪"
+      ],
+      "callout": "把英文论文先变成中文选题线索",
+      "footer": "适合轻技术用户"
+    },
+    {
+      "type": "warning",
+      "kicker": "05 限制",
+      "title": "热度不等于质量",
+      "body": "页面上的排名、点赞和讨论热度，只能帮助你判断社区关注。它不证明论文结论成立，也不完成事实核验。",
+      "callout": "发布前必须回到一手来源",
+      "footer": "风险：不要把入口当终点"
+    },
+    {
+      "type": "summary",
+      "kicker": "06 推荐流程",
+      "title": "四步用起来",
+      "bullets": [
+        "扫标题和摘要",
+        "标注适合栏目",
+        "回到一手来源",
+        "只选有用户价值的"
+      ],
+      "callout": "收藏：它负责发现，你负责判断",
+      "footer": "评论区：要不要每日中文选题清单？"
+    }
+  ]
+}

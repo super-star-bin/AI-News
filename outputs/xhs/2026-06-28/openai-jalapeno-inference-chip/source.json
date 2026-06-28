@@ -1,0 +1,95 @@
+{
+  "topicId": "T20260628-001",
+  "slug": "2026-06-28_openai-jalapeno-inference-chip",
+  "brand": "AI宇宙",
+  "brandEn": "AI NEWS",
+  "column": "今日值得看",
+  "source": "The Verge",
+  "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/955939/openai-reveals-its-first-ai-processor-jalapeno",
+  "risk": "媒体报道 / 未独立验证",
+  "theme": "daily-watch",
+  "title": "OpenAI 造芯片，别只看挑战谁",
+  "caption": "今天值得看的一条，不是新模型，而是 OpenAI 的推理芯片消息。The Verge 报道称 OpenAI 展示了首款自研 AI 处理器 Jalapeño。我的判断是：这件事不要只看成“挑战英伟达”，对普通用户更重要的是，AI 产品竞争正在从模型能力扩展到推理算力、成本、速度和稳定性。来源边界要保留：性能、能效和部署规模属于媒体报道内容，本账号没有独立验证。建议以后看 AI 新闻多问三件事：推理成本有没有下降，供给能不能稳定，开放范围是否真的扩大。",
+  "hashtags": ["OpenAI", "人工智能", "AI工具", "ChatGPT", "AIAgent", "科技趋势"],
+  "cards": [
+    {
+      "type": "cover",
+      "kicker": "今日值得看",
+      "title": "OpenAI 造芯片\n别只看挑战谁",
+      "subtitle": "真正该看的是推理成本",
+      "badge": "热点判断",
+      "visualTitle": "MODEL × INFRA",
+      "visualSubtitle": "模型竞争进入供给层",
+      "footer": "判断：AI 新闻别只看模型名"
+    },
+    {
+      "type": "text",
+      "kicker": "01 先说结论",
+      "title": "重点不是谁打败谁",
+      "body": "更值得普通用户关注的是：AI 产品的价格、速度、上下文和 Agent 稳定性，都会受推理算力影响。",
+      "callout": "模型越常用，推理成本越关键",
+      "footer": "来源：The Verge"
+    },
+    {
+      "type": "text",
+      "kicker": "02 发生了什么",
+      "title": "报道提到 Jalapeño",
+      "body": "The Verge 称 OpenAI 展示首款自研 AI 处理器 Jalapeño，面向 ChatGPT、Codex 和未来模型的推理负载。",
+      "callout": "Jalapeño 可理解为推理专用芯片",
+      "footer": "媒体报道，性能未独立验证"
+    },
+    {
+      "type": "compare",
+      "kicker": "03 别只看模型",
+      "title": "AI 体验背后有两层",
+      "leftTitle": "前台",
+      "rightTitle": "后台",
+      "leftItems": [
+        "模型回答",
+        "功能入口",
+        "界面体验"
+      ],
+      "rightItems": [
+        "推理成本",
+        "算力供给",
+        "并发稳定"
+      ],
+      "callout": "后台限制，最后会变成用户限制",
+      "footer": "普通用户也会感受到价格和速度"
+    },
+    {
+      "type": "bullets",
+      "kicker": "04 两个场景",
+      "title": "这和你有什么关系",
+      "bullets": [
+        "客服 Agent 要看并发",
+        "知识库要看成本",
+        "内容工具要看速度",
+        "长上下文要看供给"
+      ],
+      "callout": "不是买芯片，是理解 AI 工具边界",
+      "footer": "适合产品、运营、内容创作者"
+    },
+    {
+      "type": "warning",
+      "kicker": "05 风险边界",
+      "title": "不要直接写成定论",
+      "body": "这条内容来自媒体报道。性能、能效和部署规模都不等于本账号独立测试，也不能推出普通用户马上会降价。",
+      "callout": "可以关注趋势，但不要扩写成结果",
+      "footer": "限制：媒体来源 / 未实测"
+    },
+    {
+      "type": "summary",
+      "kicker": "06 怎么看新闻",
+      "title": "以后多问 3 件事",
+      "bullets": [
+        "推理成本是否下降",
+        "算力供给是否稳定",
+        "开放范围是否扩大",
+        "用户限制是否变少"
+      ],
+      "callout": "收藏：AI 竞争不只在模型榜单",
+      "footer": "评论区：你更在意价格还是速度？"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "topicId": "T20260626-004",
+  "slug": "2026-06-27_likely-answer-correctness",
+  "brand": "AI宇宙",
+  "brandEn": "AI NEWS",
+  "column": "论文变应用",
+  "source": "arXiv 2606.27359v1",
+  "sourceUrl": "https://arxiv.org/abs/2606.27359v1",
+  "risk": "预印本 / 未复现",
+  "theme": "paper-to-application",
+  "title": "AI 最顺口的答案，不一定最可靠",
+  "caption": "今天补一篇论文变应用，来自 arXiv 论文 When are likely answers right? On Sequence Probability and Correctness in LLMs。中文可以理解为：模型更可能给出的答案，什么时候才真的更可能是对的？我的判断是：这篇值得看，因为它提醒我们，AI 回答越顺、越像标准答案，不等于越可靠。论文摘要称，在固定数据集的不同问题之间，高序列概率常常能预测正确性；但通过换解码方法或调参数让答案更高概率，并不可靠提升准确率；同一个问题多次回答时，序列概率也不是好的正确性指标。限制：这是预印本，未做本地复现，也不是说概率完全无用。更稳妥的做法是看证据、外部事实、规则校验和人工复核。",
+  "hashtags": ["AI论文", "人工智能", "AI工具", "提示词", "知识工作", "AI避坑"],
+  "cards": [
+    {
+      "type": "cover",
+      "kicker": "论文变应用 / arXiv",
+      "title": "AI 最顺口的答案\n不一定最可靠",
+      "subtitle": "高概率不等于高可信",
+      "badge": "论文变应用",
+      "visualTitle": "PROBABILITY ≠ TRUTH",
+      "visualSubtitle": "顺口答案要看证据",
+      "footer": "判断：别把流畅度当正确性"
+    },
+    {
+      "type": "text",
+      "kicker": "01 先说结论",
+      "title": "越像标准答案，不代表越真",
+      "body": "这篇论文提醒：模型更容易说出的回答，有时能反映题目难度，但不能直接当成同一问题里选择正确答案的依据。",
+      "callout": "顺口是可读性，不是可靠性",
+      "footer": "来源：arXiv 2606.27359v1"
+    },
+    {
+      "type": "text",
+      "kicker": "02 论文研究什么",
+      "title": "它看的是序列概率和正确性",
+      "body": "sequence probability 是序列概率，意思是模型认为整段回答出现的概率；correctness 是回答是否真的正确。",
+      "callout": "问题是：模型更可能说的话，什么时候更可能是对的？",
+      "footer": "英文术语已补中文解释"
+    },
+    {
+      "type": "compare",
+      "kicker": "03 关键发现",
+      "title": "概率有用，但边界很窄",
+      "leftTitle": "可能有用",
+      "rightTitle": "不能滥用",
+      "leftItems": [
+        "固定数据集内",
+        "不同题目之间",
+        "判断题目难度"
+      ],
+      "rightItems": [
+        "同一题多答案",
+        "换解码参数",
+        "直接提升准确率"
+      ],
+      "callout": "不能只选“模型最容易说”的版本",
+      "footer": "摘要结论：高概率不可靠迁移到解码决策"
+    },
+    {
+      "type": "warning",
+      "kicker": "04 为什么要看",
+      "title": "流畅答案会降低警惕",
+      "body": "写资料、查政策、做竞品分析时，最危险的往往不是模型卡壳，而是它给出一个很顺、很确定、但缺少证据的回答。",
+      "callout": "越像标准答案，越要问证据在哪里",
+      "footer": "适合内容、运营、产品和知识工作者"
+    },
+    {
+      "type": "bullets",
+      "kicker": "05 可以怎么用",
+      "title": "把这 4 个动作加进流程",
+      "bullets": [
+        "让 AI 给来源依据",
+        "要求列出反例",
+        "关键事实外部检索",
+        "高风险人工复核"
+      ],
+      "callout": "不要用“看起来最顺”替代校验",
+      "footer": "尤其是合同、财务、医疗、法律场景"
+    },
+    {
+      "type": "summary",
+      "kicker": "06 限制和总结",
+      "title": "别把结论解读过头",
+      "bullets": [
+        "这是预印本论文",
+        "本工作区未复现实验",
+        "不是说概率完全无用",
+        "重点是概率有场景边界"
+      ],
+      "callout": "收藏一句：AI 的答案越顺，不代表越真",
+      "footer": "评论区：你中过“顺口答案”的坑吗？"
+    }
+  ]
+}

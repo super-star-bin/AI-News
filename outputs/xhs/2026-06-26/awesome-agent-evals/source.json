@@ -1,0 +1,107 @@
+{
+  "topicId": "T20260626-017",
+  "slug": "2026-06-26_awesome-agent-evals",
+  "brand": "AI宇宙",
+  "brandEn": "AI NEWS",
+  "column": "开源项目拆解",
+  "source": "GitHub README / 已核验",
+  "sourceUrl": "https://github.com/benchflow-ai/awesome-evals",
+  "risk": "风险低",
+  "theme": "open-source",
+  "title": "做 Agent 前，先收藏这个评测资料库",
+  "caption": "今天拆一个适合收藏的开源资料库：benchflow-ai/awesome-evals。中文可以理解为 AI Agent 评测资料库。它不是一个可以直接运行的 Agent，也不是模型排行榜，而是围绕怎么构建和评估 AI agents 的资料索引。我的判断是：如果你正在做 Agent 产品、要验收 AI 自动化方案，或者想从看演示进阶到会判断，这个仓库值得收藏。README 当前写到，它包含 443+ curated links 和 146 deep reading notes，并提供 PATTERNS.md，涉及 LLM-as-judge、轨迹评分、CI gating 等例子。它的价值不是给你一个标准答案，而是提醒你：别只看 Agent 能不能演示跑通，更要看任务是否完成、工具是否用对、过程是否越权、失败能否复盘。",
+  "hashtags": ["开源项目", "AIAgent", "AI评测", "GitHub", "AI工具", "产品经理"],
+  "cards": [
+    {
+      "type": "cover",
+      "kicker": "开源项目拆解 / GitHub",
+      "title": "做 Agent 前\n先收藏这个资料库",
+      "subtitle": "它不是工具，而是评测入口",
+      "badge": "GitHub 项目",
+      "visualTitle": "AGENT EVALS",
+      "visualSubtitle": "从演示到验收",
+      "footer": "判断：适合当 Agent 评测入门地图"
+    },
+    {
+      "type": "text",
+      "kicker": "01 先说结论",
+      "title": "这是一个适合收藏的 Agent 评测入口",
+      "body": "awesome-evals 不是可直接运行的 Agent，而是关于构建和评估 AI agents 的资料库，适合用来搭建验收框架。",
+      "callout": "它帮你从“看演示”转向“设计评测”",
+      "footer": "来源：benchflow-ai/awesome-evals README"
+    },
+    {
+      "type": "bullets",
+      "kicker": "02 为什么重要",
+      "title": "上线 Agent，不能只看跑通一次",
+      "bullets": [
+        "任务到底有没有完成",
+        "工具有没有选对",
+        "过程有没有越权",
+        "失败能不能复盘"
+      ],
+      "callout": "Eval 的价值，是把“看起来不错”变成可检查",
+      "footer": "适合从 demo 走向真实业务的人"
+    },
+    {
+      "type": "bullets",
+      "kicker": "03 仓库里有什么",
+      "title": "README 当前列了这些内容",
+      "bullets": [
+        "443+ curated links",
+        "146 deep reading notes",
+        "论文博客演讲工具",
+        "PATTERNS.md 示例"
+      ],
+      "callout": "curated links 指人工筛选整理的资料链接",
+      "footer": "数字可能随仓库更新变化"
+    },
+    {
+      "type": "bullets",
+      "kicker": "04 真实场景",
+      "title": "评测要回到具体任务",
+      "bullets": [
+        "客服 Agent：查单退款别越权",
+        "数据 Agent：来源口径要清楚",
+        "工具调用：过程需要可追溯",
+        "失败场景：要能定位原因"
+      ],
+      "callout": "不要用一次顺滑演示替代业务验收",
+      "footer": "产品运营也能用它建立评测意识"
+    },
+    {
+      "type": "bullets",
+      "kicker": "05 怎么开始看",
+      "title": "普通用户先看这 3 部分",
+      "bullets": [
+        "Must-read starter set",
+        "Agent-specific evaluation",
+        "Safety / adversarial evaluation",
+        "再决定具体工具"
+      ],
+      "callout": "先建立框架，再回到自己的业务测试集",
+      "footer": "英文小节可理解为入门、Agent 专项、安全对抗"
+    },
+    {
+      "type": "warning",
+      "kicker": "06 限制条件",
+      "title": "它不是一键评测平台",
+      "body": "这个仓库更像资料地图，不是权威标准答案。我没有逐条核验全部链接，也没有本地运行所有工具。",
+      "callout": "不要把通用资料库当成业务验收结果",
+      "footer": "最终仍要根据自己的任务设计评测集"
+    },
+    {
+      "type": "summary",
+      "kicker": "07 一句话总结",
+      "title": "别只问 Agent 能不能跑",
+      "bullets": [
+        "结果能不能检查",
+        "过程能不能追溯",
+        "风险能不能拦住",
+        "失败能不能定位"
+      ],
+      "callout": "演示决定你愿不愿意试，评测决定它能不能上线",
+      "footer": "评论区：你现在怎么验收 Agent？"
+    }
+  ]
+}
